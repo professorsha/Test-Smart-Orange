@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -14,23 +20,66 @@
     <title>Test Smart Orange</title>
   </head>
   <body>
-    <header>
-      <span class="logo">Logo company</span>
-      <svg></svg>
-      <div class="slider">
-        <h1>Test slider</h1>
+    <header class="header">
+      <div class="container">
+        <span class="logo">Logo company</span>
+        <svg
+          class="slider-arrow-left-icon"
+          width="40"
+          height="24"
+          aria-label="arrow-left"
+        >
+          <use href="./images/svg/sprite.svg#icon-arrow-left"></use>
+        </svg>
+        <div class="slider">
+          <h1 class="header-title">Test slider</h1>
+        </div>
+        <svg
+          class="slider-arrow-right-icon"
+          width="40"
+          height="24"
+          aria-label="arrow-right"
+        >
+          <use href="./images/svg/sprite.svg#icon-arrow-right"></use>
+        </svg>
+        <div class="header-bottom">
+          <svg class="union-icon" width="41" height="9" aria-label="union-icon">
+            <use href="./images/svg/sprite.svg#icon-Union"></use>
+          </svg>
+          <div class="header-bottom-line"></div>
+          <svg
+            class="icon-Clover"
+            width="22"
+            height="22"
+            aria-label="icon-Clover"
+          >
+            <use href="./images/svg/sprite.svg#icon-Clover"></use>
+          </svg>
+        </div>
       </div>
-      <div class="pointers"></div>
     </header>
     <main>
-        <h2 class="">Збудовані обʼєкти</h2>
-        <ul class="filter-list">
-            <li class="filter-list-item">Усі</li>
-            <li class="filter-list-item">Житловий</li>
-            <li class="filter-list-item">Громадський</li>
-            <li class="filter-list-item">Спортивний</li>
-        </ul>
-
+      <section class="built-objects">
+        <div class="container">
+          <h2 class="built-objects-title">Збудовані обʼєкти</h2>
+          <ul class="filter-list">
+            <li class="filter-list-item">
+              <a href="/object?category=all" class="filter-link active-link"
+                >Усі</a
+              >
+            </li>
+            <li class="filter-list-item">
+              <a href="/object?category=living" class="filter-link">Житловий</a>
+            </li>
+            <li class="filter-list-item">
+              <a href="/object?category=" class="filter-link">Громадський</a>
+            </li>
+            <li class="filter-list-item">
+              <a href="/object?category=" class="filter-link">Спортивний</a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
